@@ -43,7 +43,7 @@ def getLunchs():
 @app.route('/lunchs/page=<int:page>', methods=['GET'])
 def getLunchsPerPage(page):
     try:
-        all_lunchs = Lunch.query.paginate(page=page, per_page=10).items
+        all_lunchs = Lunch.query.order_by(desc(Lunch.id)).paginate(page=page, per_page=10).items
         result = lunchs_schema.dump(all_lunchs)
         
         return jsonify(Lunchs=result)
