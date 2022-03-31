@@ -1,6 +1,6 @@
 # Rest_Api_Python
 
-• Summary
+• Resumen
 
 Es una api, diseñada para que los colaboradores de un restaurante puedan gestionar los clientes que llegan el dia de la jornada de almuerzo organizada
 por el dueño del lugar, puede almacenar los clientes, asi como editarlos, eliminarlos o simplemente leer esa información proveniente de una base de datos.
